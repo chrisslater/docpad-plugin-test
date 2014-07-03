@@ -33,7 +33,9 @@
 	<article>
 		<%- @content %>
 	</article>
-	<footer></footer>
+	<footer>
+		<%= @getFoo() %>
+	</footer>
 
 	<!-- DocPad Scripts + Our Own -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
